@@ -6,7 +6,9 @@ function compute()
     let years = document.getElementById("years").value;
     let result = document.getElementById("result");
     
+    //calculating interest
     let interest = principle.value * years * rate/100;
+
     let year = new Date().getFullYear()+parseInt(years);
 
     //user input validation
@@ -22,6 +24,7 @@ function compute()
         return true;
     } 
 }
+//function for updating range value on onchange event
 function updateRate() {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText = rateval + "%";
