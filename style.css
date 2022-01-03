@@ -1,16 +1,45 @@
-body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family:verdana;text-align: center;}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: "Roboto";
+    color: white;
+    margin: 0;
+}
 .maindiv {
     background-color: white;
     color: black;
-    width: 500px;
-    padding: 20px;
+    width: 95%;
+    height: 95%;
+    padding: 200px 0;
     border-radius: 25px;
-    margin: 100px auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+h1 {
+    color: grey;
+    text-align: center;
 }
 .maindiv > div {
     margin-top: 5px;
     margin-left: 50px;
+}
+button {
+    border:2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .maindiv #result {
     line-height: 1.5em;
@@ -19,4 +48,15 @@ h1{color:grey;font-family:verdana;text-align: center;}
     background-color: yellow;
     color: black;
     font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+    .maindiv {
+        background-color: white;
+        color: black;
+        width: 500px;
+        height: auto;
+        padding: 20px;
+        border-radius: 25px;
+        
+    }
 }

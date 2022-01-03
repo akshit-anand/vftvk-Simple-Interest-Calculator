@@ -1,7 +1,7 @@
 function compute()
 {
     //get all required elements
-    let principle = document.getElementById("principal");
+    let principle = document.querySelector("#principal");
     let rate = document.getElementById("rate").value;
     let years = document.getElementById("years").value;
     let result = document.getElementById("result");
